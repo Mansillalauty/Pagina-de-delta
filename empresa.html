@@ -1,15 +1,20 @@
 <link rel="stylesheet" href="servicios.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+<link rel="stylesheet" href="enviar.js">
 <html>
 
     <body>
 
         <header class="encabezado">
+          <div class="logosEncabezadoEmpresa">
             <img class="logo" src="logo casa de repuesto.png" alt="logo de peugeot">
             <img class="logo2" src="logo casa de repuesto.png" alt="logo de peugeot">
-            
-            <nav class="navegadores">
+          </div>
+          <div class="logosEncabezadoEmpresa2">
+            <i class="bi bi-list hambu" id="lista"></i>
+          </div>
+           
+            <nav class="navegadores" id="nav">
                 <a class="link"  href="index.html">INICIO</a>
                 <a class="link"  href="empresa.html">EMPRESA</a>
                 <a class="link"  href="servios.html">SERVICIOS</a>
@@ -21,19 +26,23 @@
                 <i class="bi bi-geo-alt-fill logoUbicacion"> Av. Cazón 52,Gran Buenos Aires, Provincia de Buenos Aires</i>
             </div>
         
-            <a class="Instagram" target="_blank" href="https://www.instagram.com/repuestosdelta2"><img src="Instagram.png" alt="logo de instagram" width="35px"  ></a>
-            <p class="ig">repuestosdelta2</p>
-            <a class="wpp" target="_blank" href="https://wa.link/dlo7z2"><img src="wpp.png" alt="logo de whats app" width="40px"></a>
-            <p class="what">Nuestro numero</p>
-
+            <nav class="navegadoresEmpresa">
+              <a class="wppEmpresa" target="_blank" href="https://wa.link/dlo7z2"><img src="wpp.png" alt="logo de whats app" width="40px"></a>
+              <p class="whatEmpresa">Nuestro telefono</p>
+            </nav>
+            <nav class="navegadoresEmpresa">
+              <a class="InstagramEmpresa" target="_blank" href="https://www.instagram.com/repuestosdelta2"><img src="Instagram.png" alt="logo de instagram" width="35px"  ></a>
+              <p class="igEmpresa">repuestosdelta2</p>
+            </nav>
+            
         </header>
           <main>
 
               <SEction>
-                <img class="foto" src="foto 3.jpg" alt="">
+                <img class="fotoEmpresa" src="foto 3.jpg" alt="">
                 <div class="textoEmpresa">
                     <h1 class="QueOfrecemos">¿Quienes somos?</h1>
-                 <p class="textoMainEmpresa">Somos líderes reconocidos en nuestro sector, ofreciendo productos/servicios de alta calidad que satisfagan las necesidades de nuestros clientes y contribuyan al desarrollo sostenible de la comunidad. Buscamos innovar constantemente, 
+                  <p class="textoMainEmpresa">Somos líderes reconocidos en nuestro sector, ofreciendo productos/servicios de alta calidad que satisfagan las necesidades de nuestros clientes y contribuyan al desarrollo sostenible de la comunidad. Buscamos innovar constantemente, 
                     mantener estándares éticos elevados y construir relaciones sólidas con nuestros clientes, empleados y socios comerciales, para lograr un crecimiento continuo y 
                     ser referentes en excelencia empresarial</p>
                     <h1 class="QueOfrecemos">¿Que ofrecemos?</h1>
@@ -50,18 +59,17 @@
                 </div>    
               </SEction>
 
-            <div class="colorDeFondo">
-                
-            </div>
-            
           </main>
          
           <footer class="pieDePagina">
       
-            <img class="logo" src="logo casa de repuesto.png" alt="logo de peugeot">
-            <img class="logo2" src="logo casa de repuesto.png" alt="logo de peugeot">
+            <div class="LogosPieEmpresa">
+              <img class="logo" src="logo casa de repuesto.png" alt="logo de peugeot">
+              <img class="logo2" src="logo casa de repuesto.png" alt="logo de peugeot">
+            </div>
+   
             
-            <nav class="navegadores">
+            <nav class="navegadoresPieEmpresa">
                 <a class="link"  href="index.html">INICIO</a>
                 <a class="link"  href="empresa.html">EMPRESA</a>
                 <a class="link"  href="servios.html">SERVICIOS</a>
@@ -75,18 +83,20 @@
       
             <h1 class="tituloPie">Nuestras Redes</h1>
       
-            <div class="redesPie">
+            <div class="redesPieEmpresa">
       
-              <a class="Instagrams" target="_blank" href="https://www.instagram.com/repuestosdelta2"><img src="Instagram.png" alt="logo de instagram" width="35px"  ></a>
-              <p class="igs">repuestosdelta2</p>
-              <a class="wpp" target="_blank" href="https://wa.link/dlo7z2"><img src="wpp.png" alt="logo de whats app" width="40px"></a>
-              <p class="what">Nuestro numero</p>  
+              <a class="InstagramEmpresaPie" target="_blank" href="https://www.instagram.com/repuestosdelta2"><img src="Instagram.png" alt="logo de instagram" width="35px"  ></a>
+              <p class="igEmpresaPie">repuestosdelta2</p>
+              <a class="wppEmpresaPie" target="_blank" href="https://wa.link/dlo7z2"><img src="wpp.png" alt="logo de whats app" width="40px"></a>
+              <p class="whatEmpresaPie">Nuestro numero</p>  
       
             </div>
             
       
           </footer>
 
+
+          <script src="enviar.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
     </body>    
 </html>

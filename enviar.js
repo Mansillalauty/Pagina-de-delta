@@ -1,3 +1,13 @@
+const lista = document.getElementById("lista");
+const nav = document.getElementById("nav");
+lista.addEventListener ('click',()=>{
+  nav.classList.toggle("ver");
+
+  })
+
+
+
+
 const form = document.getElementById('form');
 
 form.addEventListener('submit', function (e) {
@@ -44,3 +54,4 @@ form.addEventListener('submit', function (e) {
             button.disabled = false;
         })
 });
+
