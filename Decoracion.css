@@ -1,103 +1,240 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 1279px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .encabezado{
+        background-color: rgb(30, 104, 161);
+        height: 4rem;
+        position: relative;
+    }
+    
+    .icono{
+        display: none;
+    }
+
+    .logo{
+        width: 3%;
+        position: absolute;
+    }
+ 
+
+    .logo2{
+        width: 3%;
+        position: absolute;
+        margin-left: 97%;
+    }
+    
+.hambu{
+    display: none;
+}
+    
+    .navegadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+    
+    .link{
+        color: white;
+        text-decoration: none;
+        margin-top: 1.5rem;
+    }
+    
+    .logoUbicacion{
+        position: absolute;
+     margin-left: 4%;
+     margin-top: 1.3rem;
+     font-size: 18px;
+     color: rgb(181, 183, 193);
+    }
+
+    .logoUbicacionFinal{
+        position: absolute;
+     margin-left: 4%;
+     margin-top: -1.3%;
+     font-size: 18px;
+     color: rgb(181, 183, 193);
+    }
+    
+    .Instagram{
+        position: absolute;
+        margin-left: 73%;
+        margin-top: -0.2%;
+    }
+    
+    .ig{
+        margin-left: 75.5%;
+        font-size: 20px;
+        margin-top: -1.5%;
+        color: black;
+    }
+    
+    .Instagrams{
+        position: absolute;
+        margin-left: 73%;
+        margin-top: -0.2%;
+    }
+    
+    .igs{
+        margin-left: 75.5%;
+        font-size: 20px;
+        margin-top: -1.5%;
+        color: black;
+    }
+
+    .texto{
+        position: absolute;
+        text-align: end;
+        padding: 0 250px;
+        margin-top: 250px;
+        color: white;
+    }
+    
+    .foto{
+        height: 900px;
+        width: 100%;
+    }
+    
+    .ubiImagen1{
+        margin-top: -44.2rem;
+        margin-left: -6rem;
+    }
+    
+    .ubiImagen2{
+        margin-top: -45rem;
+        margin-left: 40rem;
+    }
+    
+    .ima2{
+        color: black;
+        font-size: 4rem;
+    }
+    
+    .pieDePagina{
+        background-color: rgb(30, 104, 161);
+        height: 4rem;
+        position: relative;
+    }
+    
+    .wpp{
+         position: absolute;
+        margin-left: 84%;
+         margin-top: -2.7%;
+    }
+    
+    .what{
+        
+         margin-left: 86.5%;
+         margin-top: -2.5%;
+        font-size: 20px;
+        color: black;
+    
+    }
 }
 
+.tituloPie{
+    display: none;
+}
+
+
+@media (max-width: 481px){
+  
 .encabezado{
     background-color: rgb(30, 104, 161);
-    height: 4rem;
+    height: 6rem;
     position: relative;
 }
 
-.logo{
-    width: 3%;
+ .logos{
+    background-color: rgb(30, 104, 161);
+    height: 6rem;
+    width: 80%;
+    padding-top: 1rem;
+    position: relative;
+ }
+ .logos1{
+    background-color: rgb(30, 104, 161);
+    height: 8rem;
     position: absolute;
-}
+    margin-left: 80%;
+    margin-top: -20%;
+ }
 
-.logo2{
-    width: 3%;
-    position: absolute;
-    margin-left: 97%;
-}
+ .logo{
+    display: none;
+ }
 
-.navegadores{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4rem;
-}
+ .logo2{
+    display: none;
+ }
 
-.link{
-    color: white;
-    text-decoration: none;
-    margin-top: 1.5rem;
-}
+ .navegadores{
+    display: none;
+ }
+
+.redes{
+    display: none;
+} 
 
 .logoUbicacion{
-    position: absolute;
- margin-left: 4%;
- margin-top: -1.4%;
- font-size: 18px;
- color: rgb(181, 183, 193);
+    font-size: 1.2rem;
+    margin-bottom: 3;
 }
 
-.Instagram{
-    position: absolute;
-    margin-left: 73%;
-    margin-top: -1.5%;
-}
-
-.ig{
-    margin-left: 75.5%;
-    margin-top: -1.4%;
-    font-size: 20px;
-}
-
-.texto{
-    position: absolute;
-    text-align: end;
-    padding: 0 250px;
-    margin-top: 250px;
-    color: white;
+.hambu{
+    font-size: 2rem;
+    margin: 2rem;
 }
 
 .foto{
-    height: 900px;
-    width: 100%;
+ height: 700px;
+ width: 100%;
 }
 
-.ubiImagen1{
-    margin-top: -44.2rem;
-    margin-left: -6rem;
+.foto2{
+    height: 700px;
+    width: 100%;
+   }
+   
+   .ubiImagen1{
+    margin-top: -200%;
+    margin-left: -8%;
 }
 
 .ubiImagen2{
-    margin-top: -45rem;
-    margin-left: 40rem;
-}
-
-.ima2{
+    margin-top: -195%;
+    margin-left: 40%;
     color: black;
-    font-size: 4rem;
 }
 
 .pieDePagina{
     background-color: rgb(30, 104, 161);
-    height: 4rem;
+    height: 10rem;
     position: relative;
 }
 
-.wpp{
-     position: absolute;
-    margin-left: 84%;
-     margin-top: -2.7%;
+.logoUbicacionFinal{
+    display: none;
 }
 
-.what{
+.tituloPie{
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.redesPie{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+     }
     
-     margin-left: 86.5%;
-     margin-top: -2.5%;
-    font-size: 20px;
-
-}

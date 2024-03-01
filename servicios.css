@@ -42,10 +42,18 @@
  color: rgb(181, 183, 193);
 }
 
-.logoUbicacions{
+.logoUbicacionServ{
     position: absolute;
  margin-left: 4%;
- margin-top: -1.4%;
+ margin-top: -1.3%;
+ font-size: 18px;
+ color: rgb(181, 183, 193);
+}
+
+.logoUbicacionFinal{
+    position: absolute;
+ margin-left: 4%;
+ margin-top: -1.1%;
  font-size: 18px;
  color: rgb(181, 183, 193);
 }
@@ -64,16 +72,41 @@
 .Instagrams{
     position: absolute;
     margin-left: 73%;
-    margin-top: -1.6%;
+    margin-top: -2%;
 }
 
 .igs{
     margin-left: 75.5%;
-    margin-top: -1.4%;
+    margin-top: -1.2%;
     font-size: 20px;
     color: black;
 }
 
+.Instagramserv{
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -1.5%;
+}
+
+.igserv{
+    margin-left: 75.5%;
+    margin-top: -1.5%;
+    font-size: 20px;
+    color: black;
+}
+
+.wppserv{
+    position: absolute;
+   margin-left: 84%;
+    margin-top: -2.7%;
+}
+
+.whatserv{
+    margin-left: 86.5%;
+    margin-top: -2.5%;
+   font-size: 20px;
+   color: black;
+}
 
 .texto{
     position: absolute;
@@ -133,7 +166,7 @@
 .wpps{
     position: absolute;
    margin-left: 84%;
-    margin-top: -2.7%;
+    margin-top: -3%;
 }
 
 .whats{
@@ -143,6 +176,9 @@
    color: black;
 }
 
+.tituloPie{
+    display: none;
+}
 
 .pieDePagina{
     background-color: rgb(30, 104, 161);
