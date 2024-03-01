@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado{
+    background-color: rgb(30, 104, 161);
+    height: 4rem;
+    position: relative;
+}
+
+.logo{
+    width: 3%;
+    position: absolute;
+}
+
+.logo2{
+    width: 3%;
+    position: absolute;
+    margin-left: 97%;
+}
+
+.navegadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.logoUbicacion{
+    position: absolute;
+ margin-left: 4%;
+ margin-top: -1.4%;
+ font-size: 18px;
+ color: rgb(181, 183, 193);
+}
+
+.Instagram{
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -1.5%;
+}
+
+.ig{
+    margin-left: 75.5%;
+    margin-top: -1.4%;
+    font-size: 20px;
+}
+
+.texto{
+    position: absolute;
+    text-align: end;
+    padding: 0 250px;
+    margin-top: 250px;
+    color: white;
+}
+
+.foto{
+    height: 900px;
+    width: 100%;
+}
+
+.ubiImagen1{
+    margin-top: -44.2rem;
+    margin-left: -6rem;
+}
+
+.ubiImagen2{
+    margin-top: -45rem;
+    margin-left: 40rem;
+}
+
+.ima2{
+    color: black;
+    font-size: 4rem;
+}
+
+.pieDePagina{
+    background-color: rgb(30, 104, 161);
+    height: 4rem;
+    position: relative;
+}
+
+.wpp{
+     position: absolute;
+    margin-left: 84%;
+     margin-top: -2.7%;
+}
+
+.what{
+    
+     margin-left: 86.5%;
+     margin-top: -2.5%;
+    font-size: 20px;
+
+}

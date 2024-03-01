@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado{
+    background-color: rgb(30, 104, 161);
+    height: 4rem;
+    position: relative;
+}
+
+.logo{
+    width: 3%;
+    position: absolute;
+}
+
+.logo2{
+    width: 3%;
+    position: absolute;
+    margin-left: 97%;
+}
+
+.navegadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.logoUbicacion{
+    position: absolute;
+ margin-left: 4%;
+ margin-top: -1%;
+ font-size: 18px;
+ color: rgb(181, 183, 193);
+}
+
+.logoUbicacions{
+    position: absolute;
+ margin-left: 4%;
+ margin-top: -1.4%;
+ font-size: 18px;
+ color: rgb(181, 183, 193);
+}
+.Instagram{
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -1.2%;
+}
+
+.ig{
+    margin-left: 75.5%;
+    margin-top: -0.9%;
+    font-size: 20px;
+}
+
+.Instagrams{
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -1.6%;
+}
+
+.igs{
+    margin-left: 75.5%;
+    margin-top: -1.4%;
+    font-size: 20px;
+    color: black;
+}
+
+
+.texto{
+    position: absolute;
+    text-align: end;
+    padding: 0 250px;
+    margin-top: 250px;
+    color: white;
+}
+
+.textoEmpresa{
+    text-align: center;
+    margin: 2rem;
+    font-size: large;
+    font-size: 2rem;
+    position: absolute;
+    margin-top: -50rem;
+    color: white;
+}
+
+.textoMainEmpresa{
+    margin-top: 2rem;
+    
+}
+
+.QueOfrecemos{
+    margin-top: 1rem;
+}
+
+.colorDeFondo{
+    position: absolute;
+}
+.foto{
+    height: 900px;
+    width: 100%;
+    position: relative;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.wpp{
+    position: absolute;
+   margin-left: 84%;
+    margin-top: -1.6%;
+}
+
+.what{
+    margin-left: 86.5%;
+    margin-top: -1.2%;
+   font-size: 20px;
+}
+
+.wpps{
+    position: absolute;
+   margin-left: 84%;
+    margin-top: -2.7%;
+}
+
+.whats{
+    margin-left: 86.5%;
+    margin-top: -2.5%;
+   font-size: 20px;
+   color: black;
+}
+
+
+.pieDePagina{
+    background-color: rgb(30, 104, 161);
+    height: 4rem;
+    position: relative;
+}
+
+.servicioFoto{
+    height: 300px;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.ubicacionServicios{
+    text-align: center;
+    margin-top: 5%;
+    padding: 0%;
+}
+
+.tituloServicios{
+    text-align: center;
+    margin-top: 4rem;
+}
+.color{
+    background-color: blanchedalmond;
+}
+
+.parrafoServicio{
+    margin-top: 5.2rem;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    height: 855px;
+}
+
+.cuadrado1{
+    width: 40%;
+    height: 650px;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 8rem;
+}
+
+.tamaño{
+    width: 20%;
+    height: 50px;
+    margin-top: 2rem;
+    margin-left: 38%;
+}
+
+.nombreForm{
+    width: 60%;
+    height: 30px;
+    margin-left: 20%;
+}
+
+.consultaForm{
+    width: 60%;
+    height: 80px;
+   margin-left: 20%;
+}
+
+.archivos{
+    margin-left: 30%;
+}
+
+.indicaciones{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.tituloForm{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
