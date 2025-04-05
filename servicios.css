@@ -299,57 +299,42 @@
     display: none;
 }
 
-@media (max-width: 481px){
-  
-  
+@media (max-width: 481px) {
+    /* Ajustes para pantallas pequeñas */
 
-     .fotoEmpresa{
-        height: 800PX;
-        width: 100%;
-     }
-
-     .logoUbicacion{
-        font-size: 1.2rem;
-        margin-bottom: 3;
-    }
-    
-.textoEmpresa{
-    font-size: 1rem;
+    /* Encabezado */
+    .encabezado {
+        background-color: rgb(30, 104, 161);
+        height: 6rem;
+        position: relative;
+        z-index: 1;
     }
 
-.navegadoresPieEmpresa{
-    display: none;
-}
-
-.logosPieEmpresa{
-    display: none;
-}
-
-.logosEncabezadoEmpresa{
-    display: none;
-}
-
-    .redesPieEmpresa{
-        display: none;
-    }
-
-    .navegadoresEmp{
-        display: none;
-    }
-
-    .navegadoresEmpresa{
-        display: none;
-    }
-
-    .logoUbicacion{
-        height: 5rem;
+    /* Logos */
+    .logos, .logos1 {
+        background-color: rgb(30, 104, 161);
+        height: 6rem;
         width: 80%;
-        margin-left: -0%;
-        margin-top: 2%;
-        
+        padding-top: 1rem;
+        position: relative;
     }
 
-    .navegadores{
+    .logos1 {
+        height: 4rem;
+        margin-left: 80%;
+        margin-top: -20%;
+        z-index: 1;
+    }
+
+    /* Menú desplegable */
+    .hambu {
+        color: black;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    /* Navegadores */
+    .navegadores {
         position: absolute;
         top: 0;
         left: 0;
@@ -359,41 +344,66 @@
         align-items: center;
         gap: 2rem;
         font-size: 1.5rem;
-        background-color: rgb(0, 0, 0,0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         height: 100vh;
         width: 100%;
         z-index: 1;
         opacity: 0;
         pointer-events: none;
-     }
+    }
 
-     .logosEncabezadoEmpresa2{
-        
-        height: 2rem;
-        margin-top: 1rem;
-        width: 20%;
-        margin-left: 75%;
-        position: absolute;
-     }
-    
-     .hambu{
-        font-size: 2rem;
-        display: flex;
-        justify-content: end;
-        text-align: start;
-        color: black;
-     }
+    /* Visibilidad del menú */
+    .ver {
+        opacity: 1;
+        pointer-events: unset;
+    }
 
-     .tituloPie{
+    /* Pie de página */
+    .pieDePagina {
+        background-color: rgb(30, 104, 161);
+        height: 10rem;
+        position: relative;
+    }
+
+    /* Título del pie */
+    .tituloPie {
         text-align: center;
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
     }
-    .logoUbicacionFinal{
+
+    /* Redes sociales en el pie */
+    .redesPie {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    /* Ocultar elementos */
+    .navegadoresPie, .redes, .logoUbicacionFinal {
         display: none;
     }
-}
 
+    /* Tamaño de las imágenes */
+    .foto, .foto2 {
+        height: 700px;
+        width: 100%;
+    }
+
+    /* Ubicación de las imágenes */
+    .ubiImagen1 {
+        margin-top: -200%;
+        margin-left: -8%;
+    }
+
+    .ubiImagen2 {
+        margin-top: -195%;
+        margin-left: 40%;
+        color: black;
+    }
+}
 
 

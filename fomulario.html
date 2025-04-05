@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <title>DELTA 2</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,28 +40,28 @@
 
             <div class="cuadrado1">
          <h1 class="tituloForm">Contáctanos </h1>
-                <form class="formulario" action="">
-                    <label class="indicaciones" for="">Nombre</label>
+                <form class="formulario" id="formulario" method="POST">
+                    <label class="indicaciones" for="nombre">Nombre</label>
 
-                    <input class="nombreForm" type="text" required autocomplete="off" name="nombre" id="">
+                    <input class="nombreForm" type="text" required autocomplete="off" name="nombre" id="nombre">
 
-                    <label class="indicaciones" for="">Apellido</label>
+                    <label class="indicaciones" for="apellido">Apellido</label>
 
-                    <input class="nombreForm" type="text" required autocomplete="off" name="apellido" id="">
+                    <input class="nombreForm" type="text" required autocomplete="off" name="apellido" id="apellido">
 
-                    <label class="indicaciones" for="">Email</label>
+                    <label class="indicaciones" for="correo">Email</label>
 
-                    <input class="nombreForm" type="email" required autocomplete="off" name="correo" id="">
+                    <input class="nombreForm" type="email" required autocomplete="off" name="correo" id="correo">
 
-                    <label class="indicaciones" for="">Consulta</label>
+                    <label class="indicaciones" for="pregunta">Consulta</label>
 
-                    <input class="consultaForm" type="text"  required autocomplete="off"  name="pregunta" id="">
+                    <input class="consultaForm" type="text"  required autocomplete="off"  name="pregunta" id="pregunta">
 
-                    <label class="indicaciones" for="">Adjuntar archivo</label>
+                    <label class="indicaciones" for="archivo">Adjuntar archivo</label>
 
-                    <input class="archivos" type="file" name="" id="">
+                    <input class="archivos" type="file" name="archivo" id="archivo">
                     
-                    <input class="tamaño" type="submit" name="" id="">
+                    <input class="tamaño" type="submit" value="Enviar">
             
                 </form>
 
@@ -71,6 +72,6 @@
 
     </main>
    
-   <script> scr="enviar.jss" </script>
+   <script src="enviar.js"></script>
 </body>
 </html>

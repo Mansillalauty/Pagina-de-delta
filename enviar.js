@@ -1,57 +1,49 @@
-const lista = document.getElementById("lista");
-const nav = document.getElementById("nav");
-lista.addEventListener ('click',()=>{
-  nav.classList.toggle("ver");
+document.addEventListener('DOMContentLoaded', function() {
+  const formulario = document.getElementById('formulario');
 
-  })
+  formulario.addEventListener('submit', function(event) {
+    event.preventDefault();
 
+    const archivoInput = document.getElementById('archivo');
+    const archivo = archivoInput.files[0];
 
+    if (archivo) {
+      const lector = new FileReader();
 
+      lector.onload = function(evento) {
+        const base64Imagen = evento.target.result.split(',')[1];
 
-const form = document.getElementById('form');
+        // Llama a la herramienta MCP para identificar el vehículo
+        llamarMcpTool(base64Imagen);
+      };
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const button = document.getElementById('boton');
-    button.disabled = true;
-    const data = new FormData(form);
-    const apiKey = process.env.PUBLIC_API_KEY;
-    const body = {
-        "sender": {
-            "name": "Consulta",
-            "email": "lautym118@gmail.com"
-        },
-        "to": [
-            {
-                "email": "lautym118@gmail.com", 
-                "name": "Lautaro"
-            }
-        ],
-        "subject": "Solicitud para Proveedor o cv",
-        "htmlContent": `
-                        <h1>ALGUIEN SE CONTACTO CONTIGO</h1>
-                        <p>nombre : ${data.get('nombre')}</p>
-                        <p>nombre : ${data.get('apellido')}</p>
-                        <p>email : ${data.get('correo')}</p>
-                        <p>pregunta : ${data.get('pregunta')}</p>
-        `
+      lector.readAsDataURL(archivo);
+    } else {
+      alert('Por favor, selecciona una imagen.');
     }
-    fetch("https://api.brevo.com/v3/smtp/email", {
+  });
+
+async function llamarMcpTool(base64Imagen) {
+    try {
+      const response = await fetch('http://localhost:3000/api/identify_vehicle', {
         method: 'POST',
         headers: {
-            'api-key': apiKey,
-            'Content-Type': 'application/json'
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(body)
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            form.reset();
+        body: JSON.stringify({
+          image_base64: base64Imagen
+        })
+      });
 
-        })
-        .finally(data=>{
-            button.disabled = false;
-        })
+      if (response.ok) {
+        const data = await response.json();
+        alert('Marca y modelo del vehículo: ' + data.result);
+      } else {
+        alert('Error al llamar a la herramienta MCP: ' + response.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error al llamar a la herramienta MCP: ' + error.message);
+    }
+  }
 });
-
