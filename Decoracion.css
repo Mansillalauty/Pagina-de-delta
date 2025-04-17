@@ -27,9 +27,9 @@
         margin-left: 97%;
     }
     
-.hambu{
+ .hambu{
     display: none;
-}
+ }
     
     .navegadores{
         display: flex;
@@ -37,6 +37,14 @@
         justify-content: center;
         gap: 4rem;
     }
+
+    .navegadoresPie{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+    
     
     .link{
         color: white;
@@ -76,9 +84,14 @@
     .Instagrams{
         position: absolute;
         margin-left: 73%;
-        margin-top: -0.2%;
+        margin-top: -10%;
     }
     
+    .InstagramPrincipal{
+        position: absolute;
+        margin-left: 73%;
+    }
+
     .igs{
         margin-left: 75.5%;
         font-size: 20px;
@@ -128,12 +141,14 @@
     
     .what{
         
-         margin-left: 86.5%;
-         margin-top: -2.5%;
-        font-size: 20px;
-        color: black;
-    
-    }
+        margin-left: 86.5%;
+        margin-top: -2.5%;
+       font-size: 20px;
+       color: black;
+   
+   }
+
+  
 }
 
 .tituloPie{
@@ -141,12 +156,225 @@
 }
 
 
+
+/* Ejemplo de Media Query para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    .encabezado {
+      flex-direction: column; /* Cambia la dirección del encabezado a vertical */
+      align-items: center; /* Centra los elementos */
+    }
+    .navegadores {
+      flex-direction: column; /* Cambia la dirección de los navegadores a vertical */
+      align-items: center; /* Centra los elementos */
+      width: 100%;
+    }
+    .link {
+      width: 100%;
+      text-align: center;
+    }
+    .logos, .logos1 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logoUbicacion {
+      text-align: center;
+    }
+    .redes {
+      flex-direction: column;
+      align-items: center;
+    }
+    .pieDePagina {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navegadoresPie {
+      flex-direction: column;
+      align-items: center;
+    }
+    .redesPie {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logoUbicacionFinal {
+      text-align: center;
+    }
+    .logosEncabezadoEmpresa, .logosEncabezadoEmpresa2 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navegadoresEmpresa {
+      flex-direction: column;
+      align-items: center;
+    }
+    .LogosPieEmpresa {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navegadoresPieEmpresa {
+      flex-direction: column;
+      align-items: center;
+    }
+    .redesPieEmpresa {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logoUbicacionFinal {
+      text-align: center;
+    }
+    .cuadrado1 {
+      width: 90%;
+    }
+    .formulario {
+      width: 100%;
+    }
+    .ubicacionServicios {
+      width: 90%;
+    }
+
+    .encabezado .contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logos, .logos1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, .logo2 {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .logoUbicacion, .logoUbicacionFinal {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .navegadores {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .redes, .redesPie {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .redes img, .redesPie img {
+        width: 30px;
+    }
+
+    .d-item .foto {
+        width: 100%;
+        height: auto;
+    }
+
+    .ubiImagen1 h1, .ubiImagen1 h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .pieDePagina {
+        text-align: center;
+    }
+
+    .tituloPie {
+        font-size: 20px;
+    }
+
+    .navegadoresPie {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navegadoresPie .link {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para iPad (pantallas entre 769px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .encabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(30, 104, 161);
+        height: 6rem;
+        position: relative;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .logo, .logo2 {
+        width: 80px;
+    }
+
+    .hambu {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .navegadores {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .navegadores.ver {
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navegadoresPie {
+        display: none;
+    }
+
+    .redes {
+        display: none;
+    }
+}
+  
 @media (max-width: 481px){
   
 .encabezado{
     background-color: rgb(30, 104, 161);
     height: 6rem;
     position: relative;
+    z-index: 1;
 }
 
  .logos{
@@ -158,12 +386,16 @@
  }
  .logos1{
     background-color: rgb(30, 104, 161);
-    height: 8rem;
+    height: 4rem;
     position: absolute;
     margin-left: 80%;
     margin-top: -20%;
+    z-index: 1;
  }
 
+ .hambu{
+    color: black;
+ }
  .logo{
     display: none;
  }
@@ -173,8 +405,37 @@
  }
 
  .navegadores{
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0,0.7);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
  }
+
+ .ver{
+    opacity: 1;
+    pointer-events: unset
+    ;
+ }
+
+ .link{
+    color: white;
+ }
+
+ .navegadoresPie{
+  display: none;
+}
+
 
 .redes{
     display: none;
@@ -237,4 +498,3 @@
 }
 
      }
-    

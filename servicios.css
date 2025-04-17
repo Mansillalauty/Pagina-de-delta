@@ -28,6 +28,13 @@
     gap: 4rem;
 }
 
+.navegadoresPieEmpresa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
 .link{
     color: white;
     text-decoration: none;
@@ -57,35 +64,59 @@
  font-size: 18px;
  color: rgb(181, 183, 193);
 }
-.Instagram{
+.InstagramEmpresa{
     position: absolute;
     margin-left: 73%;
-    margin-top: -1.2%;
+    margin-top: -0.5%;
 }
 
-.ig{
-    margin-left: 75.5%;
+.igEmpresa{
+    margin-left: 75%;
+    margin-top: -1.1%;
+    font-size: 20px;
+}
+
+.wppEmpresa{
+    position: absolute;
+   margin-left: 84%;
+    margin-top: -0.5%;
+    
+}
+
+.whatEmpresa{
+    margin-left: 86.5%;
+    margin-top: -1.2%;
+   font-size: 20px;
+}
+
+.InstagramEmpresaPie{
+    position: absolute;
+    margin-left: 73%;
+    margin-top: -0.5%;
+}
+
+.igEmpresaPie{
+    margin-left: 75.3%;
     margin-top: -0.9%;
     font-size: 20px;
 }
 
-.Instagrams{
+.wppEmpresaPie{
     position: absolute;
-    margin-left: 73%;
-    margin-top: -2%;
+   margin-left: 84%;
+    margin-top: -1.7%;
 }
 
-.igs{
-    margin-left: 75.5%;
+.whatEmpresaPie{
+    margin-left: 86.5%;
     margin-top: -1.2%;
-    font-size: 20px;
-    color: black;
+   font-size: 20px;
 }
 
 .Instagramserv{
     position: absolute;
     margin-left: 73%;
-    margin-top: -1.5%;
+    margin-top: -0.2%;
 }
 
 .igserv{
@@ -104,6 +135,32 @@
 .whatserv{
     margin-left: 86.5%;
     margin-top: -2.5%;
+   font-size: 20px;
+   color: black;
+}
+
+.instagramFormulario{
+    position: absolute;
+    margin-left: 73%;
+     margin-top: -0.5%;
+}
+
+.igFormulario{
+    margin-left: 75.5%;
+    margin-top: -1%;
+    font-size: 20px;
+    color: black;
+}
+
+.wppFormulario{
+    position: absolute;
+   margin-left: 84%;
+    margin-top: -1.7%;
+}
+
+.whatFormulario{
+    margin-left: 86.5%;
+    margin-top: -1.2%;
    font-size: 20px;
    color: black;
 }
@@ -132,13 +189,13 @@
 }
 
 .QueOfrecemos{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .colorDeFondo{
     position: absolute;
 }
-.foto{
+.fotoEmpresa{
     height: 900px;
     width: 100%;
     position: relative;
@@ -148,32 +205,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-
-.wpp{
-    position: absolute;
-   margin-left: 84%;
-    margin-top: -1.6%;
-}
-
-.what{
-    margin-left: 86.5%;
-    margin-top: -1.2%;
-   font-size: 20px;
-}
-
-.wpps{
-    position: absolute;
-   margin-left: 84%;
-    margin-top: -3%;
-}
-
-.whats{
-    margin-left: 86.5%;
-    margin-top: -2.5%;
-   font-size: 20px;
-   color: black;
 }
 
 .tituloPie{
@@ -263,3 +294,116 @@
     margin-top: 2rem;
     font-size: 3rem;
 }
+
+.hambu{
+    display: none;
+}
+
+@media (max-width: 481px) {
+    /* Ajustes para pantallas pequeñas */
+
+    /* Encabezado */
+    .encabezado {
+        background-color: rgb(30, 104, 161);
+        height: 6rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Logos */
+    .logos, .logos1 {
+        background-color: rgb(30, 104, 161);
+        height: 6rem;
+        width: 80%;
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    .logos1 {
+        height: 4rem;
+        margin-left: 80%;
+        margin-top: -20%;
+        z-index: 1;
+    }
+
+    /* Menú desplegable */
+    .hambu {
+        color: black;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    /* Navegadores */
+    .navegadores {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Visibilidad del menú */
+    .ver {
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    /* Pie de página */
+    .pieDePagina {
+        background-color: rgb(30, 104, 161);
+        height: 10rem;
+        position: relative;
+    }
+
+    /* Título del pie */
+    .tituloPie {
+        text-align: center;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Redes sociales en el pie */
+    .redesPie {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    /* Ocultar elementos */
+    .navegadoresPie, .redes, .logoUbicacionFinal {
+        display: none;
+    }
+
+    /* Tamaño de las imágenes */
+    .foto, .foto2 {
+        height: 700px;
+        width: 100%;
+    }
+
+    /* Ubicación de las imágenes */
+    .ubiImagen1 {
+        margin-top: -200%;
+        margin-left: -8%;
+    }
+
+    .ubiImagen2 {
+        margin-top: -195%;
+        margin-left: 40%;
+        color: black;
+    }
+}
+
+
